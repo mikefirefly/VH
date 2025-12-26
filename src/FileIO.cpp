@@ -96,7 +96,7 @@ static int __fastcall Script_ReadFile(void *L) {
     return 1;
 }
 
-static int __fastcall ScriptFileExists(void *L) {
+static int __fastcall Script_FileExists(void *L) {
     if (!Game::Lua::IsString(L, 1)) {
         Game::Lua::Error(L, "Usage: FileExists(filename)");
         return 0;
