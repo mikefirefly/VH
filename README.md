@@ -31,14 +31,15 @@ The library registers these Lua functions:
 ```lua
 WriteFile(filename, mode, content)
 content = ReadFile(filename)
+FileExists(filename)
 SetUnitBlip(unit [, texture [, scale]])
 SetObjectTypeBlip(type [, texture [, scale]])
 SetUnitDisplayID(unitToken [, displayID])
 RemapDisplayID(oldDisplayID(s) [, newDisplayID])
 SetUnitMountDisplayID(unitToken [, mountDisplayID])
 RemapMountDisplayID(oldDisplayID(s) [, factionIndexedDisplayIDs])
-SetUnitVisibleItemID(unitToken, inventorySlot [, displayID])
-RemapVisibleItemID(oldDisplayID(s), inventorySlot [, newDisplayID])
+SetUnitVisibleItemID(unitToken, inventorySlot [, itemID])
+RemapVisibleItemID(oldItemID(s), inventorySlot [, newItemID])
 displayID, nativeDisplayID, mountDisplayID = UnitDisplayInfo(unitToken)
 itemDisplayID = GetItemDisplayID(itemID)
 ```
